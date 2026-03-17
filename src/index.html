@@ -1,0 +1,149 @@
+<!doctype html>
+<html class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Tentang Saya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <style>
+      input:invalid,
+      input:required:invalid {
+        border: 5px solid red;
+      }
+      input:valid,
+      input:required {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <header>
+        <h1 class="my-8 capitalize font-display bg-linear-to-r from-pink-500 to-violet-500 bg-clip-text text-xl font-extrabold text-transparent text-center md:text-2xl lg:text-4xl">halo saya fadli front end web developer</h1>
+        <nav class="relative">
+          <ul class="fixed top-0 right-0 left-0 flex justify-around text-white bg-sky-500/50">
+            <li><a href="#teknologi">Teknologi</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section id="teknologi">
+          <h2 class="text-xl md:text-2xl lg:text-4xl font-bold mb-8">Teknologi Yang Sudah Saya Pelajari</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+            <article>
+              <figure>
+                <picture>
+                  <source media="(min-width:1000px)" srcset="../gambar/tailwind/tailwindlg.png" />
+                  <source media="(min-width:750px)" srcset="../gambar/tailwind/tailwindmd.png" />
+                  <source media="(min-width:500px)" srcset="../gambar/tailwind/tailwindsm.png" />
+                  <img src="../gambar/tailwind/tailwindsm.png" alt="Logo Tailwind Css" title="Logo Tailwind Css" width="150" />
+                </picture>
+                <figcaption>
+                  <p class="capitalize">saya sudah belajar materi tailwind lebih dari 1 bulan dan menggunakannya di website portofolio ini</p>
+                </figcaption>
+              </figure>
+              <button class="cursor-pointer favorit outline-blue-600 outline-2 mr-4 mb-4 px-6 py-3 rounded-xl font-bold text-black bg-gradient-to-r from-blue-500 to teal-400" value="tailwind">Favorit1</button>
+            </article>
+            <article>
+              <figure>
+                <picture>
+                  <source media="(min-width:1000px)" srcset="../gambar/react/reactlg.png" />
+                  <source media="(min-width:750px)" srcset="../gambar/react/reactmd.png" />
+                  <source media="(min-width:500px)" srcset="../gambar/react/reactsm.png" />
+                  <img src="../gambar/react/reactsm.png" alt="Logo React Js" title="Logo React Js" width="150" />
+                </picture>
+                <figcaption>
+                  <p class="capitalize">saya sudah belajar materi react lebih dari 1 bulan dan menggunakannya di project ecommerce</p>
+                </figcaption>
+              </figure>
+              <button class="cursor-pointer favorit outline-blue-600 outline-2 mr-4 mb-4 px-6 py-3 rounded-xl font-bold text-black bg-gradient-to-r from-blue-500 to teal-400" value="react">Favorit2</button>
+            </article>
+          </div>
+          <aside>
+            <h3 class="text-xl font-bold my-2">Teknologi Favoritmu</h3>
+            <output class="getfav grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4"></output>
+            <button class="bg-red-600 text-white px-2 py-1 rounded my-2 float-right cursor-pointer" id="hapusSemua">Hapus Semua</button>
+          </aside>
+        </section>
+
+        <section class="clear-right" id="project">
+          <h2 class="text-xl md:text-2xl lg:text-4xl font-bold my-2">Project Yang Pernah Dibuat</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+            <article class="rounded-xl border border-gray-200 bg-white shadow-sm transition hover:shadow-lg text-center">
+              <h3 class="text-xl font-semibold text-gray-800 my-2">algoritma visualisasi</h3>
+              <ul>
+                <li class="text-xl font-semibold text-gray-800 my-2">
+                  teknologi:javascript dom untuk menampilkan solusi soal matematika codewars dalam bentuk visualisasi
+                  <a href="https://github.com/fadlisabda/algoritma-visualisasi" target="_blank" class="font-medium text-fg-brand text-blue-500 hover:underline">Read more</a>,jika ingin saya jelaskan live demo dan cara bikinnya saya bisa
+                  kelokasi
+                </li>
+              </ul>
+            </article>
+            <article class="rounded-xl border border-gray-200 bg-white shadow-sm transition hover:shadow-lg overflow-scroll text-center">
+              <h3 class="text-xl font-semibold text-gray-800 my-2">ecommerce</h3>
+              <ul>
+                <li class="text-xl font-semibold text-gray-800 my-2">
+                  teknologi:reactjs,api,tailwindcss <a href="https://github.com/fadlisabda/react-ecommerce-basic" target="_blank" class="font-medium text-fg-brand text-blue-500 hover:underline">Read more</a> jika ingin saya jelaskan live
+                  demo dan cara bikinnya saya bisa kelokasi
+                </li>
+              </ul>
+            </article>
+            <article class="rounded-xl border border-gray-200 bg-white shadow-sm transition hover:shadow-lg overflow-scroll text-center">
+              <h3 class="text-xl font-semibold text-gray-800 my-2">website portofolio</h3>
+              <ul>
+                <li class="text-xl font-semibold text-gray-800 my-2">
+                  teknologi:html5,tailwindcss <a href="https://github.com/fadlisabda/fadlisabda.github.io" target="_blank" class="font-medium text-fg-brand text-blue-500 hover:underline">Read more</a> jika ingin saya jelaskan live demo dan
+                  cara bikinnya saya bisa kelokasi
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="feedback">
+          <h2 class="text-xl md:text-2xl lg:text-4xl font-bold my-2">Feedback</h2>
+          <article>
+            <form action="" method="post" autocomplete="off" class="grid gap-y-1">
+              <label class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+                No Hp :
+                <input type="tel" name="nohp" pattern="^(\+62|62|0)8[1-9][0-9]{7,10}$" required />
+              </label>
+              <label class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+                url contoh website lain :
+                <input type="url" name="website" required />
+              </label>
+              <label class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+                rating website saya :
+                <input type="range" name="rating" id="rating" min="0" max="10" class="cursor-pointer" />
+              </label>
+              <output class="akhir"></output>
+              <label class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+                waktu kirim :
+                <input type="date" name="tanggal" required oninvalid="this.setCustomValidity('ini harus diisi')" oninput="this.setCustomValidity('')" />
+              </label>
+              <div class="flex justify-end">
+                <button type="submit" class="bg-indigo-600 rounded-md text-white p-2 cursor-pointer">Kirim</button>
+              </div>
+            </form>
+          </article>
+          <aside>
+            <h3 class="text-xl font-bold my-2">Feedbackmu</h3>
+            <ul id="listData" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4"></ul>
+            <button class="bg-red-600 text-white px-2 py-1 rounded my-2 float-right cursor-pointer" id="hapusSemua1">Hapus Semua</button>
+          </aside>
+        </section>
+      </main>
+
+      <footer class="clear-right">
+        <p class="text-center">&copy; <output id="year"></output></p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
